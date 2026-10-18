@@ -3372,7 +3372,7 @@
                 <span class="nav-card-title">Interactive Swagger API</span>
               </div>
               <p class="nav-card-desc">Explore and test live REST API endpoints with interactive schema documentation and execute test queries.</p>
-              <a href="http://127.0.0.1:8001/docs" target="_blank" rel="noopener noreferrer" class="nav-action-btn">
+              <a href="http://127.0.0.1:8000/docs" target="_blank" rel="noopener noreferrer" class="nav-action-btn">
                 <span>Open /docs</span>
                 <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
               </a>
@@ -3418,8 +3418,8 @@
   <script>
     // DataMind API client: datasets, questions, answers and evidence.
     (function () {
-      // Use same origin if already served on backend port; otherwise point to backend (port 8001 in dev).
-      const API = (location.port === '8000' || location.port === '8001') ? '' : (window.DATA_MIND_BACKEND_URL || 'http://127.0.0.1:8001');
+      // Use same origin if already served on backend port; otherwise point to backend (port 8000 in dev).
+      const API = (location.port === '8000' || location.port === '8001') ? '' : (window.DATA_MIND_BACKEND_URL || 'http://127.0.0.1:8000');
 
 
       const DEFAULT_DATASET = 'worldbank_wdi';
